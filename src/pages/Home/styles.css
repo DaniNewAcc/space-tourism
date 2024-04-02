@@ -1,0 +1,132 @@
+.home__wrapper {
+    margin-inline: 1.5rem;
+    margin-top: 7rem;
+    width: 327px;
+}
+
+.home__subtitle {
+    color: #D0D6F9;
+    font-family: var(--ff-accent);
+    letter-spacing: .169rem;
+    margin-bottom: .5rem;
+}
+
+.home__title {
+    color: #FFFFFF;
+    font-family: var(--ff-title);
+    font-size: 5rem;
+    line-height: 6.25rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #D0D6F9;
+    font-family: var(--ff-base);
+    font-size: .938rem;
+    line-height: 1.563rem;
+    margin-bottom: 5.063rem;
+    text-align: center;
+}
+
+.circle {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-family: var(--ff-title);
+    font-size: 1.25rem;
+    height: 150px;
+    letter-spacing: .005rem;
+    position: relative;
+    width: 150px;
+    z-index: 1;
+}
+
+.circle:hover::before {
+    scale: 1.5;
+}
+
+.circle::before {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    content: '';
+    height: 150px;
+    position: absolute;
+    transition: scale 1s ease-in-out;
+    width: 150px;
+    z-index: -1;
+}
+
+.explore {
+    color: #0B0D17;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .home__wrapper {
+        margin-top: 12.625rem;
+        width: 450px;
+    }
+    .home__subtitle {
+        font-size: 1.25rem;
+        letter-spacing: .211rem;
+    }
+    .home__title {
+        font-size: 9.375rem;
+        line-height: 9.375rem;
+        margin-block: 1.5rem;
+    }
+    .description {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    .explore__wrapper {
+        margin-bottom: 5.625rem;
+    }
+    .circle {
+        font-size: 2rem;
+        height: 242px;
+        letter-spacing: .125rem;
+        width: 242px;
+    }
+    .circle::before {
+        height: 242px;
+        width: 242px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home__wrapper {
+        height: 382px;
+        margin-bottom: 8.188rem;
+        margin-left: 10.313rem;
+        margin-top: 24.188rem;
+        width: 450px;
+    }
+    .explore__wrapper {
+        margin-top: 30.938rem;
+        margin-right: 10.313rem;
+    }
+    .home__subtitle {
+        font-size: 1.75rem;
+        letter-spacing: .295rem;
+        text-align: start;
+    }
+    .home__title {
+        font-size: 9.375rem;
+        margin-block: 1.5rem;
+    }
+    .description {
+        font-size: 1.125rem;
+        line-height: 2rem;
+        text-align: start;
+    }
+    .circle {
+        height: 274px;
+        width: 274px;
+    }
+    .circle::before {
+        height: 274px;
+        width: 274px;
+    }
+}

@@ -1,0 +1,126 @@
+.logo {
+    height: 40px;
+    margin-left: 1.5rem;
+    width: 40px;
+}
+
+
+.sidebar {
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(to top rgb(255, 255, 255), rgb(208, 214, 249), rgba(255, 255, 255, 0.04));
+    display: none;
+    max-width: 254px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    margin-top: 33.95px;
+    margin-right: 33.95px;
+    outline: none;
+}
+
+.sidebar-group {
+    margin-top: 3.275rem;
+    align-items: start;
+}
+
+.sidebar-item {
+    margin-bottom: .575rem;
+}
+
+.sidebar-item a {
+    color: lightgray;
+    font-family: var(--ff-accent);
+    letter-spacing: .169rem;
+}
+
+.nav__number {
+    color: #FFFFFF;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+    letter-spacing: .169rem;
+    margin-right: .688rem;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .logo {
+        height: 48px;
+        margin-left: 2.438rem;
+        width: 48px;
+    }
+
+    .navbar__group {
+        backdrop-filter: blur(8px);
+        background-image: radial-gradient(rgba(151, 151, 151, 0.04), rgba(255, 255, 255, 0.03));
+        gap: 2.313rem;
+        height: 96px;
+        padding-inline: 3rem;
+        width: 450px;
+    }
+    .item__styling {
+        color: #FFFFFF;
+        font-family: var(--ff-accent);
+        font-size: .875rem;
+        letter-spacing: .148rem;
+        padding-top: 2.438rem;
+        padding-bottom: 2.013rem;
+        text-transform: uppercase;
+    }
+    .navbar__group li.active-link {
+        border-bottom: 2px solid white;
+    }
+    .navbar__group li:hover {
+        border-bottom: 2px solid #979797;
+    }
+    .navbar__group li.active-link:hover {
+        border-color: #FFFFFF;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar__group {
+        width: 600px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .logo {
+        margin-left: 3.438rem;
+    }
+    .navbar__group {
+        padding-left: 7.688rem;
+        padding-right: 0;
+        width: 770px;
+    }
+    .item__styling {
+        font-size: 1rem;
+        letter-spacing: .169rem;
+    }
+    .line {
+        border-bottom: 1px solid #979797;
+        height: 1px;
+        position: absolute;
+        left: 10.438rem;
+        right: 45rem;
+        top: 6.2rem;
+        z-index: 100;
+    }
+}
