@@ -24,14 +24,25 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![](./screenshots/desktop-design-1.PNG)
+![](./screenshots/desktop-design-2.PNG)
+![](./screenshots/desktop-design-3.PNG)
+![](./screenshots/desktop-design-4.PNG)
+![](./screenshots/tablet-design-1.PNG)
+![](./screenshots/tablet-design-2.PNG)
+![](./screenshots/tablet-design-3.PNG)
+![](./screenshots/tablet-design-4.PNG)
+![](./screenshots/mobile-design-1.PNG)
+![](./screenshots/mobile-design-2.PNG)
+![](./screenshots/mobile-design-3.PNG)
+![](./screenshots/mobile-design-4.PNG)
 
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
+- Solution URL: [https://github.com/DaniNewAcc/space-tourism](https://github.com/DaniNewAcc/space-tourism)
 - Live Site URL: [](https://your-live-site-url.com)
 
 ## My process
