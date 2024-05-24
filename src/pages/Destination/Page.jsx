@@ -7,7 +7,7 @@ import desktop from '../../assets/destination/background-destination-desktop.jpg
 import './styles.css';
 
 
-export default function Destination() {
+const Destination = () => {
     const [current, setCurrent] = useState(0);
     const { name, images, description, distance, travel } = data.destinations[current];
     return (
@@ -51,3 +51,4 @@ export default function Destination() {
     )
   }
   
+export default Destination

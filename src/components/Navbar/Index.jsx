@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import Home from '../../pages/Home/Page';
 import Destination from '../../pages/Destination/Page';
@@ -43,7 +43,7 @@ const Navbar = () => {
     }
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const resizeHandler = () => {
       setSidebarVisible(window.innerWidth < 768);
       setIsLargerScreen(window.innerWidth > 1400);
@@ -54,7 +54,7 @@ const Navbar = () => {
     }
   }, [])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.addEventListener('mousedown', sidebarHandler)
   })
 

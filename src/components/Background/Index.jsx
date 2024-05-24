@@ -6,7 +6,7 @@ function Background({ mobile, tablet, desktop }) {
         <picture>
             <source className="bg" media="(min-width: 992px)" srcSet={desktop} />
             <source className="bg" media="(min-width: 768px)" srcSet={tablet} />
-            <img className='bg object-fit-cover' src={mobile} alt="" />
+            <img className='bg object-fit-cover' src={mobile} alt="background" />
         </picture>
       </div>
   )

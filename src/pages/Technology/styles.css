@@ -65,6 +65,9 @@
 }
 
 @media (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .technology__img {
         width: calc(100% + 5px);
         height: auto;

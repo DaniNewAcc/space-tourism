@@ -6,7 +6,7 @@ import tablet from '../../assets/crew/background-crew-tablet.jpg';
 import desktop from '../../assets/crew/background-crew-desktop.jpg';
 import './styles.css';
 
-export default function Crew() {
+const Crew = () => {
   const [current, setCurrent] = useState(0);
   const { name, images, role, bio } = data.crew[current];
 
@@ -28,7 +28,7 @@ export default function Crew() {
             <div className='gallery d-flex justify-content-center justify-content-lg-start'>
             {data.crew.map((d, index) => {
               return (
-                <span className={`gallery__indicator${current === index  ? ' active__indicator' : ''}`} key={d} onClick={() => setCurrent(index)}></span>
+                <span className={`gallery__indicator${current === index  ? ' active__indicator' : ''}`} key={d.name} onClick={() => setCurrent(index)}></span>
               )
             })}
             </div>
@@ -44,3 +44,4 @@ export default function Crew() {
     )
 }
   
+export default Crew

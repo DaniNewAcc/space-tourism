@@ -6,7 +6,7 @@ import tablet from '../../assets/technology/background-technology-tablet.jpg';
 import desktop from '../../assets/technology/background-technology-desktop.jpg';
 import './styles.css';
 
-export default function Technology() {
+const Technology = () => {
   const [current, setCurrent] = useState(0)
   const { name, images, description } = data.technology[current];
   return (
@@ -25,7 +25,7 @@ export default function Technology() {
           <div className='indicator-wrapper d-flex flex-lg-column justify-content-center gap-lg-3'>
             {data.technology.map((d, index) => {
               return (
-                <button className={`technology__btn${name === d.name  ? ' active__btn' : ''}`} key={d} onClick={() => setCurrent(index)}>{index + 1}</button>
+                <button className={`technology__btn${name === d.name  ? ' active__btn' : ''}`} key={d.name} onClick={() => setCurrent(index)}>{index + 1}</button>
               )
             })}
           </div>
@@ -40,3 +40,4 @@ export default function Technology() {
   )
 }
 
+export default Technology;
