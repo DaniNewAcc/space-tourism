@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import Background from '../../components/Background/Index';
-import mobile from '../../assets/home/background-home-mobile.jpg';
-import tablet from '../../assets/home/background-home-tablet.jpg';
-import desktop from '../../assets/home/background-home-desktop.jpg';
+import mobile from '/home/background-home-mobile.jpg';
+import tablet from '/home/background-home-tablet.jpg';
+import desktop from '/home/background-home-desktop.jpg';
 import './styles.css';
 
 const Home = () => {

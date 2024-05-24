@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import data from '../../data.json';
 import Background from '../../components/Background/Index';
-import mobile from '../../assets/destination/background-destination-mobile.jpg';
-import tablet from '../../assets/destination/background-destination-tablet.jpg';
-import desktop from '../../assets/destination/background-destination-desktop.jpg';
+import mobile from '/destination/background-destination-mobile.jpg';
+import tablet from '/destination/background-destination-tablet.jpg';
+import desktop from '/destination/background-destination-desktop.jpg';
 import './styles.css';
 
 
@@ -26,7 +26,7 @@ const Destination = () => {
                     <ul className='nav-group d-flex justify-content-center justify-content-lg-start px-0'>
                     {data.destinations.map((d, index) => {
                         return (
-                        <li className={`destination__nav-link${current === index  ? ' active__link' : ''}`} key={index} onClick={() => setCurrent(index)}><a>{d.name}</a></li>
+                        <li className={`destination__nav-link${current === index  ? ' active__link' : ''}`} key={d.name} onClick={() => setCurrent(index)}><a>{d.name}</a></li>
                         )
                     })}
                     </ul>

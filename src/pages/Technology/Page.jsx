@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import data from '../../data.json';
 import Background from '../../components/Background/Index';
-import mobile from '../../assets/technology/background-technology-mobile.jpg';
-import tablet from '../../assets/technology/background-technology-tablet.jpg';
-import desktop from '../../assets/technology/background-technology-desktop.jpg';
+import mobile from '../../../public/technology/background-technology-mobile.jpg';
+import tablet from '../../../public/technology/background-technology-tablet.jpg';
+import desktop from '../../../public/technology/background-technology-desktop.jpg';
 import './styles.css';
 
 const Technology = () => {

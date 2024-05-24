@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import data from '../../data.json';
 import Background from '../../components/Background/Index';
-import mobile from '../../assets/crew/background-crew-mobile.jpg';
-import tablet from '../../assets/crew/background-crew-tablet.jpg';
-import desktop from '../../assets/crew/background-crew-desktop.jpg';
+import mobile from '../../../public/crew/background-crew-mobile.jpg';
+import tablet from '../../../public/crew/background-crew-tablet.jpg';
+import desktop from '../../../public/crew/background-crew-desktop.jpg';
 import './styles.css';
 
 const Crew = () => {

@@ -61,19 +61,19 @@ const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-md me-3 me-md-0 pt-sm-3 pt-md-0 pt-lg-5 fixed-top'>
       <div className="d-flex align-items-center justify-content-between w-100">
-        <picture className="navbar-brand">
-          <img className='logo mt-2' src="./src/assets/shared/logo.svg" alt="" />
-        </picture>
+        <div className="navbar-brand">
+          <img className='logo mt-2' src="./shared/logo.svg" alt="" />
+        </div>
         {sidebarVisible && <button onClick={() => setIsOpen(!isOpen)} className="bg-transparent border-0" type="button">
           <span className={isOpen ? "hidden" : ""}>
-            <img src="./src/assets/shared/icon-hamburger.svg" alt="" />
+            <img src="./shared/icon-hamburger.svg" alt="" />
           </span>
         </button>}
         <div ref={sidebarRef} className={`${sidebarVisible ? 'sidebar' : ''}${isOpen ? ' open' : ''}${largerScreen ? 'd-flex align-items-center' : ''}`}>
           {sidebarVisible && <div className="d-flex justify-content-end">
             <button className='close' onClick={() => setIsOpen(!isOpen)} type="button">
               <span className={!isOpen ? "hidden" : ""}>
-                <img src="./src/assets/shared/icon-close.svg" alt="" />
+                <img src="./shared/icon-close.svg" alt="" />
               </span>
             </button>
           </div>
