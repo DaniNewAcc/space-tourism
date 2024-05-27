@@ -6,7 +6,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/DaniNewAcc/space-tourism](https://github.com/DaniNewAcc/space-tourism)
-- Live Site URL: [](https://your-live-site-url.com)
+- Live Site URL: [https://daninewacc.github.io/space-tourism/](https://daninewacc.github.io/space-tourism/)
 
 ## My process
 
